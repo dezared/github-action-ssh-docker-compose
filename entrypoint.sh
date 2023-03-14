@@ -10,7 +10,7 @@ cleanup() {
   log "Killing ssh agent."
   ssh-agent -k
   log "Removing workspace archive."
-  sudo rm -f /tmp/workspace.tar.bz2
+  rm -f /tmp/workspace.tar.bz2
 }
 trap cleanup EXIT
 
